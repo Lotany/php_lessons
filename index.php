@@ -45,7 +45,7 @@ include 'inc/config.php';
     </form>';
     } else {
         echo "you are logged out";
-    echo '<form action="signup.php.php" method= "POST">
+    echo '<form action="signup.php" method= "POST">
         <input type="text" name ="first" placeholder= "fistname">
         <input type="text" name ="last" placeholder= "lastname">
         <input type="text" name ="uid" placeholder= "username">
