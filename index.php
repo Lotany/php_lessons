@@ -29,6 +29,8 @@ include 'inc/config.php';
        echo "</div>";
      }
      }
+ }else{
+    echo "No users";
  }
 
     if(isset($_SESSION['id'])){
