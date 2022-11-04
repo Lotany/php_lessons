@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,6 +6,9 @@
     </head>
 
     <body>
-        
+        <form action="upload.php" method="POST">
+            <input type="file" name="file">
+            <button type="submit" name="submit">upload</button>
+        </form>
     </body>
 </html>
