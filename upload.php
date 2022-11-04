@@ -21,7 +21,7 @@ session_start();
     if($fileeeror === 0){
         if($filesize <1000000){
             $fileNameNew ="profile".$id.".".$fileActualext;
-            $filedestination = 'uploads/'.$fileNameNew;
+            $filedestination = 'image/'.$fileNameNew;
             move_uploaded_file($fileTmpname,$filedestination);
             $sql ="update profileimg set status=0 where userid ='$id'";
             $result =mysqli_query($conn,$sql);

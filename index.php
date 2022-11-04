@@ -39,9 +39,9 @@ include 'inc/config.php';
             echo "Logged in as $id";
         }
 
-        echo '<form action="upload.php" method="POST">
+        echo '<form action="upload.php" method="POST" enctype="multipart/form-data">
         <input type="file" name="file">
-        <button type="submit" name="submit">upload</button>
+        <button type="submit" name="upload">upload</button>
     </form>';
     } else {
         echo "you are logged out";
