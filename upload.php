@@ -23,6 +23,8 @@ session_start();
             $fileNameNew ="profile".$id.".".$fileActualext;
             $filedestination = 'uploads/'.$fileNameNew;
             move_uploaded_file($fileTmpname,$filedestination);
+            $sql ="update profileimg set status=0 where userid ='$id'";
+            $result =mysqli_query($conn,$sql);
             header("Location: index.php?uplloadsuccsess");
         }else {
             echo "Your file is too big";
