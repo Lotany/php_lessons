@@ -22,7 +22,7 @@ include 'inc/config.php';
      while($rowimg=mysqli_fetch_assoc($resultimg)){
         echo "<div>";
         if ($rowimg['status'] == 0){
-            echo "<img src='image/approve1'.$id.'.gif'>";
+            echo "<img src='image/approve".$id.".gif'>";
         }else {
             echo "<img src='image/approve_icon.gif'>";
         }
