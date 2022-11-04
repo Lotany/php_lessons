@@ -36,7 +36,7 @@ include 'inc/config.php';
 
     if(isset($_SESSION['id'])){
         if(isset($_SESSION['id'])==1){
-            echo "Logged in as admin";
+            echo "Logged in as $id";
         }
 
         echo '<form action="upload.php" method="POST">
