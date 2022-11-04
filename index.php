@@ -14,13 +14,15 @@ include 'inc/config.php';
         if(isset($_SESSION['id'])==1){
             echo "Logged in as admin";
         }
+
+        echo '<form action="upload.php" method="POST">
+        <input type="file" name="file">
+        <button type="submit" name="submit">upload</button>
+    </form>';
     }
 ?>
 
-        <form action="upload.php" method="POST">
-            <input type="file" name="file">
-            <button type="submit" name="submit">upload</button>
-        </form>
+
    <p>login user</p>
         <form action="login.php" method="POST">
             <button type="submit" name="submit-login">Login</button>
