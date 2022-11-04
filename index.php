@@ -10,6 +10,13 @@ include 'inc/config.php';
     <body>
 
 <?php 
+
+ $sql = "select *from user";
+ $result =mysqli_query($conn,$sql);
+ if (mysqli_num_rows($result)>0){
+     while($row =mysqli_fetch_assoc($result));
+ }
+
     if(isset($_SESSION['id'])){
         if(isset($_SESSION['id'])==1){
             echo "Logged in as admin";
