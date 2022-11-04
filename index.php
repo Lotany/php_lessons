@@ -10,7 +10,11 @@ include 'inc/config.php';
     <body>
 
 <?php 
-    
+    if(isset($_SESSION['id'])){
+        if(isset($_SESSION['id'])==1){
+            echo "Logged in as admin";
+        }
+    }
 ?>
 
         <form action="upload.php" method="POST">
