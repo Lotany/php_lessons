@@ -8,6 +8,11 @@ include 'inc/config.php';
     </head>
 
     <body>
+
+<?php 
+    
+?>
+
         <form action="upload.php" method="POST">
             <input type="file" name="file">
             <button type="submit" name="submit">upload</button>
