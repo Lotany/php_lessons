@@ -20,7 +20,7 @@ session_start();
   if(in_array($fileActualext,$allowed)){
     if($fileeeror === 0){
         if($filesize <1000000){
-            $fileNameNew ="profile".$id.".".$fileActualext;
+            $fileNameNew ="approve".$id.".".$fileActualext;
             $filedestination = 'image/'.$fileNameNew;
             move_uploaded_file($fileTmpname,$filedestination);
             $sql ="update profileimg set status=0 where userid ='$id'";
