@@ -16,5 +16,10 @@ include 'inc/config.php';
         <form action="login.php" method="POST">
             <button type="submit" name="submit-login">Login</button>
         </form>
+
+        <p>logout user</p>
+        <form action="logout.php" method="POST">
+            <button type="submit" name="submit-logout">Logout</button>
+        </form>
     </body>
 </html>
