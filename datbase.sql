@@ -10,4 +10,4 @@ create table profileimg (
     id int(11) not null primary key auto_increment,
     userid int(11) not null,
     status int(11) not null
-)
+);
