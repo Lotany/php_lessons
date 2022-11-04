@@ -19,6 +19,8 @@ include 'inc/config.php';
         <input type="file" name="file">
         <button type="submit" name="submit">upload</button>
     </form>';
+    } else {
+        echo "you are logged out";
     }
 ?>
 
