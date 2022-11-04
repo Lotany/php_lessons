@@ -21,6 +21,13 @@ include 'inc/config.php';
     </form>';
     } else {
         echo "you are logged out";
+    echo '<form action="login.php" method= "POST">
+        <input type="text" name ="first" placeholder= "fistname">
+        <input type="text" name ="last" placeholder= "lastname">
+        <input type="text" name ="uid" placeholder= "username">
+        <input type="password" name ="pwd" placeholder= "password">
+        <button type= "submit" name="submit-sin">Signup</button>
+        </form>';
     }
 ?>
 
