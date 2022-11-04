@@ -23,7 +23,7 @@ session_start();
             $fileNameNew ="approve".$id.".".$fileActualext;
             $filedestination = 'image/'.$fileNameNew;
             move_uploaded_file($fileTmpname,$filedestination);
-            $sql ="update profileimg set status=0 where userid ='$id'";
+            $sql ="update profileimg set status=0 where userid ='$id';";
             $result =mysqli_query($conn,$sql);
             header("Location: index.php?uplloadsuccsess");
         }else {
