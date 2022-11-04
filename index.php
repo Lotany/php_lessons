@@ -26,6 +26,7 @@ include 'inc/config.php';
         }else {
             echo "<img src='image/approve_icon.gif'>";
         }
+        echo $row['username'];
        echo "</div>";
      }
      }
@@ -44,12 +45,12 @@ include 'inc/config.php';
     </form>';
     } else {
         echo "you are logged out";
-    echo '<form action="login.php" method= "POST">
+    echo '<form action="signup.php.php" method= "POST">
         <input type="text" name ="first" placeholder= "fistname">
         <input type="text" name ="last" placeholder= "lastname">
         <input type="text" name ="uid" placeholder= "username">
         <input type="password" name ="pwd" placeholder= "password">
-        <button type= "submit" name="submit-sin">Signup</button>
+        <button type= "submit" name="signup-btn">Signup</button>
         </form>';
     }
 ?>
