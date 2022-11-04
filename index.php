@@ -14,7 +14,17 @@ include 'inc/config.php';
  $sql = "select *from user";
  $result =mysqli_query($conn,$sql);
  if (mysqli_num_rows($result)>0){
-     while($row =mysqli_fetch_assoc($result));
+     while($row =mysqli_fetch_assoc($result)){
+     $id =$row['id'];
+     $sqlimg = "select * from profileimg where userid='$id'";
+     $resultimg =mysqli_query($conn,$sqlimg);
+
+     while($rowimg=mysqli_fetch_assoc($resultimg)){
+        echo "<div>";
+        
+       echo "</div>";
+     }
+     }
  }
 
     if(isset($_SESSION['id'])){
