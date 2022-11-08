@@ -5,6 +5,7 @@ include 'inc/config.php';
 <html>
     <head>
         <title>Profile image</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
