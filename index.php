@@ -23,7 +23,7 @@ include 'inc/config.php';
      while($rowimg=mysqli_fetch_assoc($resultimg)){
         echo "<div>";
         if ($rowimg['status'] == 0){
-            echo "<img src='image/approve".$id.".jpg?'".mt_rand().">";
+            echo "<img class='img-one' src='image/approve".$id.".jpg?'".mt_rand().">";
         }else {
             echo "<img src='image/approve_icon.gif'>";
         }
