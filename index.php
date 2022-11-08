@@ -44,6 +44,10 @@ include 'inc/config.php';
         <input type="file" name="file">
         <button type="submit" name="upload">upload</button>
     </form>';
+    echo '<form action="delete.php" method="POST" enctype="multipart/form-data">
+    <button type="submit" name="upload">Delete</button>
+</form>';
+
     } else {
         echo "you are logged out";
     echo '<form action="signup.php" method= "POST">
