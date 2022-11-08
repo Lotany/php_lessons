@@ -21,7 +21,7 @@ include 'inc/config.php';
      $resultimg =mysqli_query($conn,$sqlimg);
 
      while($rowimg=mysqli_fetch_assoc($resultimg)){
-        echo "<div>";
+        echo "<div class'para'>";
         if ($rowimg['status'] == 0){
             echo "<img class='img-one' src='image/approve".$id.".jpg?'".mt_rand().">";
         }else {
