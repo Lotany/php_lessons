@@ -6,3 +6,5 @@ $sessionid= $_SESSION['id'];
 $filename = "image/approve".$sessionid."*";
 $fileinfo = glob($filename);
 $fileext = explode(".", $fileinfo[0]);
+
+$fileactualext = $fileext[1];
