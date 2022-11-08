@@ -23,7 +23,11 @@ include 'inc/config.php';
      while($rowimg=mysqli_fetch_assoc($resultimg)){
         echo "<div class'para'>";
         if ($rowimg['status'] == 0){
-            echo "<img class='img-one' src='image/approve".$id.".jpg?".mt_rand()."'>";
+$filename = "image/approve".$id."*";
+$fileinfo = glob($filename);
+$fileext = explode(".", $fileinfo[0]);
+$fileactualext = $fileext[1];
+            echo "<img class='img-one' src='image/approve".$id.".".$fileactualext."?".mt_rand()."'>";
         }else {
             echo "<img src='image/approve_icon.gif'>";
         }
